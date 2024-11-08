@@ -1,6 +1,6 @@
 import { useState } from "react"
 import "./ProductBacklog.css"
-import TaskCard from "./TaskCard"
+import TaskCard from "./TaskCard.jsx"
 
 function ProductBacklog() {
 
@@ -27,7 +27,7 @@ function ProductBacklog() {
   ])
 
   return (
-    <section className="product-backlog">
+    <section className="main-component">
         <h2>Product Backlog</h2>
         <div className="product-backlog__task-list">
           {tasks.map(task => (

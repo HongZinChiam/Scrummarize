@@ -11,7 +11,7 @@ function TaskCard({ task }) {
     }
 
     return (
-        <div className="task-card">
+        <div className="task-card blue-container">
             <h3 className="task-card__row">{task.name}</h3>
             <div className="task-card__info task-card__row">
                 <p className="task-card__story-point flex-center">{task.storyPoint}</p>
