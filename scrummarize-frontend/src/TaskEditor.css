@@ -1,0 +1,34 @@
+.task-editor__heading {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.task-editor__heading:not(:first-child) {
+    margin-top: 15px;
+}
+
+.task-editor__input {
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.task-editor__input--text {
+    width: 100%;
+}
+
+.task-editor__input--normal {
+    width: 125px;
+}
+
+.task-editor__input--checkbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.task-editor__tag:not(:first-child) {
+    margin-top: 10px;
+}
