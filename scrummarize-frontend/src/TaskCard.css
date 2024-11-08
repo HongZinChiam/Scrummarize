@@ -1,0 +1,101 @@
+.task-card {
+    background-color: #D3F3F8;
+    border: 3px solid #1ECCE4;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.task-card:not(:first-child) {
+    margin-top: 10px;
+}
+
+.task-card__info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.task-card__story-point {
+    background-color: #343CFF;
+    color: #FFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+.task-card__priority-rating {
+    background-color: #FFA500;
+    padding: 5px 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #000;
+}
+
+.task-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.task-card__tag {
+    padding: 5px 8px;
+    border-radius: 15px;
+}
+
+.task-card__row:not(:first-child) {
+    margin-top: 10px;
+}
+
+.task-card__tag--frontend {
+    background-color: #FFADAD;
+}
+
+.task-card__tag--backend {
+    background-color: #FFD6A5;
+}
+
+.task-card__tag--api {
+    background-color: #FDFFB6;
+}
+
+.task-card__tag--database {
+    background-color: #CAFFBF;
+}
+
+.task-card__tag--framework {
+    background-color: #9BF6FF;
+}
+
+.task-card__tag--testing {
+    background-color: #A0C4FF;
+}
+
+.task-card__tag--ui {
+    background-color: #BDB2FF;
+}
+
+.task-card__tag--ux {
+    background-color: #FFC6FF;
+}
+
+.task-card__priority-rating--low {
+    background-color: #4CAF50;
+}
+
+.task-card__priority-rating--medium {
+    background-color: #FFD600;
+}
+
+.task-card__priority-rating--important {
+    background-color: #FFA500;
+}
+
+.task-card__priority-rating--urgent {
+    background-color: #FF0000;
+}
