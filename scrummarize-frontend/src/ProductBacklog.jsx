@@ -1,6 +1,8 @@
 import { useState } from "react"
 import "./ProductBacklog.css"
 import TaskCard from "./TaskCard.jsx"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faPlus, faUpDownLeftRight } from "@fortawesome/free-solid-svg-icons"
 
 function ProductBacklog() {
 
@@ -29,10 +31,23 @@ function ProductBacklog() {
   return (
     <section className="main-component">
         <h2>Product Backlog</h2>
-        <div className="product-backlog__task-list">
+
+        <div className="product-backlog__section">
           {tasks.map(task => (
             <TaskCard key={task.id} task={task} />
           ))}
+        </div>
+
+        <div className="product-backlog__section product-backlog__section--buttons">
+          <button className="product-backlog__button">
+            <FontAwesomeIcon icon={faPlus} />
+            <p>Add</p>
+          </button>
+
+          <button className="product-backlog__button">
+            <FontAwesomeIcon icon={faUpDownLeftRight} />
+            <p>Move</p>
+          </button>
         </div>
     </section>
   )
